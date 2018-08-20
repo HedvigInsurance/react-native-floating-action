@@ -187,7 +187,9 @@ const styles = StyleSheet.create({
   },
   centerActionContainer: {
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    alignItems: "center",
+    justifyContent: "center",
   },
   textContainer: {
     paddingHorizontal: 8,
