@@ -1,17 +1,17 @@
 {
-  "name": "react-native-floating-action",
-  "version": "1.10.1",
-  "description": "floating action component for react-native",
+  "name": "@hedviginsurance/react-native-floating-action",
+  "version": "1.11.0",
+  "description": "floating action component for react-native - fork by hedviginsurance",
   "main": "index.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
-    "run:example": "cd example/ReactNativeFloatingAction-Expo && yarn install && exp start"
+    "run:example": "cd example/ReactNativeFloatingAction-Expo && yarn && yarn start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/santomegonzalo/react-native-floating-action.git"
+    "url": "git+https://github.com/hedviginsurance/react-native-floating-action.git"
   },
   "keywords": [
     "react-native",
@@ -23,9 +23,9 @@
   "author": "Gonzalo Santome",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/santomegonzalo/react-native-floating-action/issues"
+    "url": "https://github.com/hedviginsurance/react-native-floating-action/issues"
   },
-  "homepage": "https://github.com/santomegonzalo/react-native-floating-action#readme",
+  "homepage": "https://github.com/hedviginsurance/react-native-floating-action#readme",
   "dependencies": {},
   "peerDependencies": {
     "prop-types": ">=15.5.10",
