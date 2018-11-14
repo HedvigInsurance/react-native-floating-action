@@ -1,6 +1,6 @@
 {
   "name": "@hedviginsurance/react-native-floating-action",
-  "version": "1.11.0",
+  "version": "1.11.3",
   "description": "floating action component for react-native - fork by hedviginsurance",
   "main": "index.js",
   "directories": {

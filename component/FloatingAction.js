@@ -149,6 +149,7 @@ class FloatingAction extends Component {
       // @deprecated in favor of "color"
       buttonColor, // eslint-disable-line
       color,
+      customButtonStyles,
       position,
       overrideWithAction,
       distanceToEdge
@@ -189,7 +190,7 @@ class FloatingAction extends Component {
     }
 
     const Touchable = getTouchableComponent();
-    const propStyles = { backgroundColor: mainButtonColor, bottom: distanceToEdge };
+    const propStyles = { backgroundColor: mainButtonColor, bottom: distanceToEdge, ...customButtonStyles };
     if (['left', 'right'].indexOf(position) > -1) {
       propStyles[position] = distanceToEdge;
     }
@@ -325,6 +326,7 @@ FloatingAction.propTypes = {
   distanceToEdge: PropTypes.number,
   visible: PropTypes.bool,
   overlayColor: PropTypes.string,
+  customButtonStyles: PropTypes.object,
   position: PropTypes.oneOf(['right', 'left', 'center']),
   overrideWithAction: PropTypes.bool, // replace mainAction with first action from actions
   floatingIcon: PropTypes.any,
@@ -343,6 +345,7 @@ FloatingAction.defaultProps = {
   visible: true,
   color: '#1253bc',
   overlayColor: 'rgba(68, 68, 68, 0.6)',
+  customButtonStyles: {},
   position: 'right',
   distanceToEdge: 30,
   openOnMount: false,
